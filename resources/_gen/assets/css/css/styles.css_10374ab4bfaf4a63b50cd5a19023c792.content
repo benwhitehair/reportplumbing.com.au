@@ -1,3 +1,5 @@
+/* purgecss start ignore */
+
 /* nunito-regular - latin */
 
 @font-face {
@@ -42,8 +44,6 @@
   font-weight: 600;
   src: local('Zilla Slab SemiBold'), local('ZillaSlab-SemiBold'), url('/fonts/zilla-slab-v3-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/zilla-slab-v3-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
-/* purgecss start ignore */
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
@@ -973,12 +973,14 @@ footer {
 }
 
 body {
-  position: fixed;
   background: rgb(187, 222, 250);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(187, 222, 250, 1)), color-stop(50%, rgba(52, 144, 220, 1)), to(rgba(28, 61, 90, 1)));
-  background: -webkit-linear-gradient(top, rgba(187, 222, 250, 1) 0%, rgba(52, 144, 220, 1) 50%, rgba(28, 61, 90, 1) 100%);
-  background: -o-linear-gradient(top, rgba(187, 222, 250, 1) 0%, rgba(52, 144, 220, 1) 50%, rgba(28, 61, 90, 1) 100%);
-  background: linear-gradient(180deg, rgba(187, 222, 250, 1) 0%, rgba(52, 144, 220, 1) 50%, rgba(28, 61, 90, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(187, 222, 250, 1)), color-stop(50%, rgba(52, 144, 220, 1)), to(rgba(28, 61, 90, 1))) no-repeat center center fixed;
+  background: -webkit-linear-gradient(top, rgba(187, 222, 250, 1) 0%, rgba(52, 144, 220, 1) 50%, rgba(28, 61, 90, 1) 100%) no-repeat center center fixed;
+  background: -o-linear-gradient(top, rgba(187, 222, 250, 1) 0%, rgba(52, 144, 220, 1) 50%, rgba(28, 61, 90, 1) 100%) no-repeat center center fixed;
+  background: linear-gradient(180deg, rgba(187, 222, 250, 1) 0%, rgba(52, 144, 220, 1) 50%, rgba(28, 61, 90, 1) 100%) no-repeat center center fixed;
+  -webkit-background-size: cover;
+          background-size: cover;
+  overflow: scroll;
 }
 
 main a {
