@@ -3,9 +3,11 @@
 {{ end }}
 
 {{ define "main" }}
-<main class="bg-blue-lightest flex flex-col max-w-md mx-auto my-8 px-4 md:px-8 py-4 rounded-lg shadow-lg w-full">
+<main class="bg-white flex flex-col max-w-md mx-auto md:my-8 overflow-scroll md:rounded-lg shadow-lg w-full">
   {{ partial "header" . }}
-  {{ .Content }}
+  <div class="px-4 sm:px-8 py-8">
+    {{ .Content }}
+  </div>
 </main>
 {{ end }}
 
