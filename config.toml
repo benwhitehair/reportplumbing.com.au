@@ -1,7 +1,7 @@
 baseurl           = ""
 disableKinds      = ["RSS", "taxonomy", "taxonomyTerm"]
 languageCode      = "en-AU"
-title             = "Hugo Boilerplate"
+title             = "Report Plumbing"
 
 [params]
   siteDescription = "A boilerplate Hugo site to get you up and running quickly"
