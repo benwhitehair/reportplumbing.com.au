@@ -7,9 +7,10 @@
 }
 
 body {
-  position: fixed;
   background: rgb(187,222,250);
-  background: linear-gradient(180deg, rgba(187,222,250,1) 0%, rgba(52,144,220,1) 50%, rgba(28,61,90,1) 100%);
+  background: linear-gradient(180deg, rgba(187,222,250,1) 0%, rgba(52,144,220,1) 50%, rgba(28,61,90,1) 100%) no-repeat center center fixed;
+  background-size: cover;
+  overflow: scroll;
 }
 
 main a {
