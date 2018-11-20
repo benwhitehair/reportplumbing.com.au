@@ -1,5 +1,5 @@
-@import 'components/fonts.css';
 /* purgecss start ignore */
+@import 'components/fonts.css';
 @import 'tailwindcss/preflight';
 /* purgecss end ignore */
 @import 'tailwindcss/components';
