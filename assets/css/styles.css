@@ -1,4 +1,4 @@
-/* Base - Variables: tailwind-config.js */
+@import 'components/fonts.css';
 /* purgecss start ignore */
 @import 'tailwindcss/preflight';
 /* purgecss end ignore */

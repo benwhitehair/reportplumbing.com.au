@@ -1,11 +1,11 @@
 baseurl           = ""
 disableKinds      = ["RSS", "taxonomy", "taxonomyTerm"]
 languageCode      = "en-AU"
-title             = "Report Plumbing"
+title             = "REPORT PLUMBING"
 
 [params]
-  siteDescription = "A boilerplate Hugo site to get you up and running quickly"
-  phone           = ""
-  email           = ""
+  siteDescription = "Need an affordable and reliable plumber – fast? Then call Port Macquarie’s Report Plumbing with over 20 years experience catering to all your plumbing needs covering all Domestic and Commercial work."
+  phone           = "1800 421 241"
+  email           = "reportplumbing@bigpond.com"
   facebook        = ""
-  twitter         = "@luke_bennett_"
+  twitter         = ""

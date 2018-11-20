@@ -190,6 +190,7 @@ module.exports = {
 
   fonts: {
     sans: [
+      "Nunito",
       "system-ui",
       "BlinkMacSystemFont",
       "-apple-system",
@@ -204,6 +205,7 @@ module.exports = {
       "sans-serif"
     ],
     serif: [
+      "Zilla Slab",
       "Constantia",
       "Lucida Bright",
       "Lucidabright",
