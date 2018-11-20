@@ -1,8 +1,5 @@
 +++
-menu = "main"
-identifier = "Home"
 url = "/"
-weight= 1
 +++
 
 # REPORT PLUMBING
