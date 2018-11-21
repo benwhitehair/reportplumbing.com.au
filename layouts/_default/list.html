@@ -1,22 +1,27 @@
 {{ define "main" }}
-<main class="flex flex-col max-w-md mx-auto my-8 px-4 py-8 w-full">
-  <h1>{{ .Title }}</h1>
-  <hr>
-  <ul class="list-reset m-0">
-    {{- range .Pages }}
-    <li>
-      <article>
-        <h2>
-          <a href="{{ .URL }}">
-            {{- .Title -}}
-          </a>
-        </h2>
-        {{ .Content }}
-      </article>
-    </li>
-    <br>
-    <hr>
-    {{- end }}
-  </ul>
+<main
+  class="bg-white flex flex-col max-w-md mx-auto md:my-8 md:rounded-lg shadow-lg w-full"
+>
+  {{ partial "header" . }}
+  <div class="px-4 sm:px-8 py-8">
+    <h1>{{ .Title }}</h1>
+    <hr />
+    <ul class="list-reset m-0">
+      {{- range.Pages }}
+      <li>
+        <article>
+          <h2>
+            <a href="{{ .URL }}">
+              {{- .Title -}}
+            </a>
+          </h2>
+          {{ .Content }}
+        </article>
+      </li>
+      <br />
+      <hr />
+      {{- end }}
+    </ul>
+  </div>
 </main>
 {{ end }}
