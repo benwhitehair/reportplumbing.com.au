@@ -24,7 +24,7 @@ main a {
 }
 
 a:hover {
-  @apply text-teal-dark;
+  @apply text-teal;
 }
 
 .menu-current {
