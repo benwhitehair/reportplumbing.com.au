@@ -1,6 +1,6 @@
 +++
-menu = "main"
 title = "About"
+menu = "main"
 identifier = "About"
 url = "/about/"
 weight= 1
