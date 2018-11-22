@@ -9,10 +9,10 @@
     <span class="navicon bg-grey-darkest flex items-center relative"></span>
   </label>
 
-  <ul class="menu md:border-b md:border-none flex items-center justify-center list-reset mx-4 md:mx-0 text-sm w-full">
+  <ul class="menu md:border-b md:border-none flex items-center justify-center list-reset mx-4 md:mx-0 w-full">
     {{- range .Site.Menus.main }}
     <li class="border-t md:border-none">
-      <a href="{{ .URL }}" class="block md:inline-block px-2 py-3 no-underline text-grey-darkest hover:text-teal-dark{{ if or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) }} font-bold{{ end }}">
+      <a href="{{ .URL }}" class="block border-b-4 border-blue-lightest md:inline-block pb-1 pt-3 px-2 no-underline text-grey-darkest hover:text-teal-dark{{ if or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) }} menu-current{{ end }}">
         {{- .Title -}}
       </a>
     </li>
