@@ -28,5 +28,5 @@ a:hover {
 }
 
 .menu-current {
-  @apply border-teal-dark font-bold !important;
+  @apply border-teal-dark font-bold text-teal-dark !important;
 }
