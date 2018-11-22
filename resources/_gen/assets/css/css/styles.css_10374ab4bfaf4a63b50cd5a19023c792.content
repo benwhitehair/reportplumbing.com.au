@@ -557,7 +557,7 @@ table {
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out;
     content: '';
-    background-color: #3d4852;
+    background-color: #606f7b;
   }
 
   .navicon::before {
