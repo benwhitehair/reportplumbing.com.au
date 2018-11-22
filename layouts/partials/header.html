@@ -1,17 +1,18 @@
 <nav class="nav bg-blue-lightest border-b flex flex-wrap items-center justify-between">
-  <div class="flex flex-no-shrink items-center mx-4 md:mx-8 py-3 text-grey-darkest">
-    <a class="font-semibold font-serif text-xl tracking-tight" href="/">RE<span class="text-teal-dark hover:text-teal">PORT</span>PLUMBING</a>
-  </div>
+
+  <a class="flex flex-no-shrink items-center md:justify-center p-3 md:pt-6 md:w-full" href="/">
+    <img class="h-24 w-auto" src="/img/header-logo.png" alt="Report Plumbing">
+  </a>
 
   <input class="menu-btn hidden" type="checkbox" id="menu-btn">
   <label class="menu-icon block cursor-pointer md:hidden mx-4 py-2 relative select-none" for="menu-btn">
     <span class="navicon bg-grey-darkest flex items-center relative"></span>
   </label>
 
-  <ul class="menu border-b md:border-none flex justify-end list-reset ml-0 md:mr-4 w-full md:w-auto">
+  <ul class="menu md:border-b md:border-none flex items-center justify-center list-reset mx-4 md:mx-0 text-sm w-full">
     {{- range .Site.Menus.main }}
     <li class="border-t md:border-none">
-      <a href="{{ .URL }}" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker{{ if or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) }} font-bold{{ end }}">
+      <a href="{{ .URL }}" class="block md:inline-block px-2 py-3 no-underline text-grey-darkest hover:text-teal-dark{{ if or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) }} font-bold{{ end }}">
         {{- .Title -}}
       </a>
     </li>
