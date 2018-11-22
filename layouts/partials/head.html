@@ -19,7 +19,7 @@
   {{- .Site.Params.SiteDescription }}
   {{- end }}
   {{- end -}}">
-  {{/* SEO */}}
+  
   <meta name="robots" content="index, follow">
   {{ .Hugo.Generator }}
   <link rel="canonical" href="{{ .URL | absURL }}">
@@ -34,15 +34,15 @@
   ">
   <meta name="twitter:image" property="og:image" content="
   {{- if eq .Type "page" -}}
-  {{- .Site.BaseURL }}/img/logo.jpg
+  {{- .Site.BaseURL }}/img/logo.png
   {{- else -}}
   {{ .Site.BaseURL }}{{ .Params.image }}
   {{- end -}}
   ">
-  {{/* Favicons */}}
-  <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/img/apple-touch-icon.jpg">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}/img/apple-touch-icon.jpg">
-  {{/* Styles */}}
+  
+  <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}/img/apple-touch-icon.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.BaseURL }}/img/apple-touch-icon.png?v=2">
+  
   <style>
     @font-face {
       font-family: 'Nunito';
