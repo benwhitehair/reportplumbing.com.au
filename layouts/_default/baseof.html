@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
-
 {{ partial "head" . }}
-
 <body class="antialiased font-sans text-grey-darkest">
-  {{ block "main" . }}{{ end }}
+  {{ block "main" . }}
+  {{ partial "main" . }}
+  {{ end }}
   {{ partial "footer" . }}
   {{- block "script" . }}{{ end }}
 </body>
