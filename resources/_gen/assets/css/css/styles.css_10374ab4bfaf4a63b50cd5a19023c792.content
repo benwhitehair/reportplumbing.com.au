@@ -910,7 +910,7 @@ html {
 body {
   display: grid;
   min-height: 100%;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr;
 }
 
 main {
@@ -943,7 +943,12 @@ main a {
 }
 
 a:hover {
-  color: #606f7b;
+  color: #06839e;
+}
+
+.menu-current {
+  border-color: #06839e !important;
+  font-weight: 700 !important;
 }
 
 /* purgecss end ignore */
@@ -1132,7 +1137,7 @@ a:hover {
 }
 
 .bg-teal-dark {
-  background-color: #38a89d;
+  background-color: #06839e;
 }
 
 .bg-teal {
@@ -1424,7 +1429,7 @@ a:hover {
 }
 
 .hover\:bg-teal-dark:hover {
-  background-color: #38a89d;
+  background-color: #06839e;
 }
 
 .hover\:bg-teal:hover {
@@ -1716,7 +1721,7 @@ a:hover {
 }
 
 .focus\:bg-teal-dark:focus {
-  background-color: #38a89d;
+  background-color: #06839e;
 }
 
 .focus\:bg-teal:focus {
@@ -2083,7 +2088,7 @@ a:hover {
 }
 
 .border-teal-dark {
-  border-color: #38a89d;
+  border-color: #06839e;
 }
 
 .border-teal {
@@ -2375,7 +2380,7 @@ a:hover {
 }
 
 .hover\:border-teal-dark:hover {
-  border-color: #38a89d;
+  border-color: #06839e;
 }
 
 .hover\:border-teal:hover {
@@ -2667,7 +2672,7 @@ a:hover {
 }
 
 .focus\:border-teal-dark:focus {
-  border-color: #38a89d;
+  border-color: #06839e;
 }
 
 .focus\:border-teal:focus {
@@ -5539,7 +5544,7 @@ a:hover {
 }
 
 .text-teal-dark {
-  color: #38a89d;
+  color: #06839e;
 }
 
 .text-teal {
@@ -5831,7 +5836,7 @@ a:hover {
 }
 
 .hover\:text-teal-dark:hover {
-  color: #38a89d;
+  color: #06839e;
 }
 
 .hover\:text-teal:hover {
@@ -6123,7 +6128,7 @@ a:hover {
 }
 
 .focus\:text-teal-dark:focus {
-  color: #38a89d;
+  color: #06839e;
 }
 
 .focus\:text-teal:focus {
@@ -6849,7 +6854,7 @@ a:hover {
   }
 
   .sm\:bg-teal-dark {
-    background-color: #38a89d;
+    background-color: #06839e;
   }
 
   .sm\:bg-teal {
@@ -7141,7 +7146,7 @@ a:hover {
   }
 
   .sm\:hover\:bg-teal-dark:hover {
-    background-color: #38a89d;
+    background-color: #06839e;
   }
 
   .sm\:hover\:bg-teal:hover {
@@ -7433,7 +7438,7 @@ a:hover {
   }
 
   .sm\:focus\:bg-teal-dark:focus {
-    background-color: #38a89d;
+    background-color: #06839e;
   }
 
   .sm\:focus\:bg-teal:focus {
@@ -7792,7 +7797,7 @@ a:hover {
   }
 
   .sm\:border-teal-dark {
-    border-color: #38a89d;
+    border-color: #06839e;
   }
 
   .sm\:border-teal {
@@ -8084,7 +8089,7 @@ a:hover {
   }
 
   .sm\:hover\:border-teal-dark:hover {
-    border-color: #38a89d;
+    border-color: #06839e;
   }
 
   .sm\:hover\:border-teal:hover {
@@ -8376,7 +8381,7 @@ a:hover {
   }
 
   .sm\:focus\:border-teal-dark:focus {
-    border-color: #38a89d;
+    border-color: #06839e;
   }
 
   .sm\:focus\:border-teal:focus {
@@ -11232,7 +11237,7 @@ a:hover {
   }
 
   .sm\:text-teal-dark {
-    color: #38a89d;
+    color: #06839e;
   }
 
   .sm\:text-teal {
@@ -11524,7 +11529,7 @@ a:hover {
   }
 
   .sm\:hover\:text-teal-dark:hover {
-    color: #38a89d;
+    color: #06839e;
   }
 
   .sm\:hover\:text-teal:hover {
@@ -11816,7 +11821,7 @@ a:hover {
   }
 
   .sm\:focus\:text-teal-dark:focus {
-    color: #38a89d;
+    color: #06839e;
   }
 
   .sm\:focus\:text-teal:focus {
@@ -12543,7 +12548,7 @@ a:hover {
   }
 
   .md\:bg-teal-dark {
-    background-color: #38a89d;
+    background-color: #06839e;
   }
 
   .md\:bg-teal {
@@ -12835,7 +12840,7 @@ a:hover {
   }
 
   .md\:hover\:bg-teal-dark:hover {
-    background-color: #38a89d;
+    background-color: #06839e;
   }
 
   .md\:hover\:bg-teal:hover {
@@ -13127,7 +13132,7 @@ a:hover {
   }
 
   .md\:focus\:bg-teal-dark:focus {
-    background-color: #38a89d;
+    background-color: #06839e;
   }
 
   .md\:focus\:bg-teal:focus {
@@ -13486,7 +13491,7 @@ a:hover {
   }
 
   .md\:border-teal-dark {
-    border-color: #38a89d;
+    border-color: #06839e;
   }
 
   .md\:border-teal {
@@ -13778,7 +13783,7 @@ a:hover {
   }
 
   .md\:hover\:border-teal-dark:hover {
-    border-color: #38a89d;
+    border-color: #06839e;
   }
 
   .md\:hover\:border-teal:hover {
@@ -14070,7 +14075,7 @@ a:hover {
   }
 
   .md\:focus\:border-teal-dark:focus {
-    border-color: #38a89d;
+    border-color: #06839e;
   }
 
   .md\:focus\:border-teal:focus {
@@ -16926,7 +16931,7 @@ a:hover {
   }
 
   .md\:text-teal-dark {
-    color: #38a89d;
+    color: #06839e;
   }
 
   .md\:text-teal {
@@ -17218,7 +17223,7 @@ a:hover {
   }
 
   .md\:hover\:text-teal-dark:hover {
-    color: #38a89d;
+    color: #06839e;
   }
 
   .md\:hover\:text-teal:hover {
@@ -17510,7 +17515,7 @@ a:hover {
   }
 
   .md\:focus\:text-teal-dark:focus {
-    color: #38a89d;
+    color: #06839e;
   }
 
   .md\:focus\:text-teal:focus {
@@ -18237,7 +18242,7 @@ a:hover {
   }
 
   .lg\:bg-teal-dark {
-    background-color: #38a89d;
+    background-color: #06839e;
   }
 
   .lg\:bg-teal {
@@ -18529,7 +18534,7 @@ a:hover {
   }
 
   .lg\:hover\:bg-teal-dark:hover {
-    background-color: #38a89d;
+    background-color: #06839e;
   }
 
   .lg\:hover\:bg-teal:hover {
@@ -18821,7 +18826,7 @@ a:hover {
   }
 
   .lg\:focus\:bg-teal-dark:focus {
-    background-color: #38a89d;
+    background-color: #06839e;
   }
 
   .lg\:focus\:bg-teal:focus {
@@ -19180,7 +19185,7 @@ a:hover {
   }
 
   .lg\:border-teal-dark {
-    border-color: #38a89d;
+    border-color: #06839e;
   }
 
   .lg\:border-teal {
@@ -19472,7 +19477,7 @@ a:hover {
   }
 
   .lg\:hover\:border-teal-dark:hover {
-    border-color: #38a89d;
+    border-color: #06839e;
   }
 
   .lg\:hover\:border-teal:hover {
@@ -19764,7 +19769,7 @@ a:hover {
   }
 
   .lg\:focus\:border-teal-dark:focus {
-    border-color: #38a89d;
+    border-color: #06839e;
   }
 
   .lg\:focus\:border-teal:focus {
@@ -22620,7 +22625,7 @@ a:hover {
   }
 
   .lg\:text-teal-dark {
-    color: #38a89d;
+    color: #06839e;
   }
 
   .lg\:text-teal {
@@ -22912,7 +22917,7 @@ a:hover {
   }
 
   .lg\:hover\:text-teal-dark:hover {
-    color: #38a89d;
+    color: #06839e;
   }
 
   .lg\:hover\:text-teal:hover {
@@ -23204,7 +23209,7 @@ a:hover {
   }
 
   .lg\:focus\:text-teal-dark:focus {
-    color: #38a89d;
+    color: #06839e;
   }
 
   .lg\:focus\:text-teal:focus {
@@ -23931,7 +23936,7 @@ a:hover {
   }
 
   .xl\:bg-teal-dark {
-    background-color: #38a89d;
+    background-color: #06839e;
   }
 
   .xl\:bg-teal {
@@ -24223,7 +24228,7 @@ a:hover {
   }
 
   .xl\:hover\:bg-teal-dark:hover {
-    background-color: #38a89d;
+    background-color: #06839e;
   }
 
   .xl\:hover\:bg-teal:hover {
@@ -24515,7 +24520,7 @@ a:hover {
   }
 
   .xl\:focus\:bg-teal-dark:focus {
-    background-color: #38a89d;
+    background-color: #06839e;
   }
 
   .xl\:focus\:bg-teal:focus {
@@ -24874,7 +24879,7 @@ a:hover {
   }
 
   .xl\:border-teal-dark {
-    border-color: #38a89d;
+    border-color: #06839e;
   }
 
   .xl\:border-teal {
@@ -25166,7 +25171,7 @@ a:hover {
   }
 
   .xl\:hover\:border-teal-dark:hover {
-    border-color: #38a89d;
+    border-color: #06839e;
   }
 
   .xl\:hover\:border-teal:hover {
@@ -25458,7 +25463,7 @@ a:hover {
   }
 
   .xl\:focus\:border-teal-dark:focus {
-    border-color: #38a89d;
+    border-color: #06839e;
   }
 
   .xl\:focus\:border-teal:focus {
@@ -28314,7 +28319,7 @@ a:hover {
   }
 
   .xl\:text-teal-dark {
-    color: #38a89d;
+    color: #06839e;
   }
 
   .xl\:text-teal {
@@ -28606,7 +28611,7 @@ a:hover {
   }
 
   .xl\:hover\:text-teal-dark:hover {
-    color: #38a89d;
+    color: #06839e;
   }
 
   .xl\:hover\:text-teal:hover {
@@ -28898,7 +28903,7 @@ a:hover {
   }
 
   .xl\:focus\:text-teal-dark:focus {
-    color: #38a89d;
+    color: #06839e;
   }
 
   .xl\:focus\:text-teal:focus {
