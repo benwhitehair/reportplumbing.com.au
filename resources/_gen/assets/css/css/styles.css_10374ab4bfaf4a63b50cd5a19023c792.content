@@ -954,6 +954,73 @@ a:hover {
   color: #06839e !important;
 }
 
+@-webkit-keyframes fadeInUp {
+  0% {
+    -webkit-transform: translateY(2em);
+            transform: translateY(2em);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeInUp {
+  0% {
+    -o-transform: translateY(2em);
+       transform: translateY(2em);
+    opacity: 0;
+  }
+
+  100% {
+    -o-transform: translateY(0);
+       transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    -webkit-transform: translateY(2em);
+         -o-transform: translateY(2em);
+            transform: translateY(2em);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main {
+  -webkit-animation: fadeInUp .7s forwards 0s ease-in-out;
+       -o-animation: fadeInUp .7s forwards 0s ease-in-out;
+          animation: fadeInUp .7s forwards 0s ease-in-out;
+}
+
+/*
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+} */
+
 /* purgecss end ignore */
 
 .list-reset {

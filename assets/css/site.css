@@ -1,6 +1,6 @@
-@import 'components/nav.css';
-@import 'components/elements.css';
-@import 'components/grid.css';
+@import "components/nav.css";
+@import "components/elements.css";
+@import "components/grid.css";
 
 :focus:not(:focus-visible) {
   outline: none;
@@ -9,11 +9,11 @@
 body {
   background: rgb(187, 222, 250);
   background: linear-gradient(
-    180deg,
-    rgba(187, 222, 250, 1) 0%,
-    rgba(52, 144, 220, 1) 50%,
-    rgba(28, 61, 90, 1) 100%
-  )
+      180deg,
+      rgba(187, 222, 250, 1) 0%,
+      rgba(52, 144, 220, 1) 50%,
+      rgba(28, 61, 90, 1) 100%
+    )
     no-repeat center center fixed;
   background-size: cover;
   overflow: scroll;
@@ -30,3 +30,34 @@ a:hover {
 .menu-current {
   @apply border-teal-dark font-bold text-teal-dark !important;
 }
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(2em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main {
+  animation: fadeInUp 0.7s forwards 0s ease-in-out;
+}
+/*
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+} */
