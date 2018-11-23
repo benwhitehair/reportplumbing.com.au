@@ -20,13 +20,13 @@
     </h1>
 
     <div class="flex flex-wrap text-sm justify-start md:justify-start my-6">
-      <div class="md:pr-4 w-full md:w-1/2">
+      <div class="group md:pr-4 w-full md:w-1/2">
         <a
           class="bg-blue-lightest border-2 flex items-center justify-center max-w-sm mb-4 md:mb-0 mr-2 p-3 rounded-full hover:shadow w-full"
           href="tel:{{ .Site.Params.phone }}"
         >
           <svg
-            class="fill-current mr-2 text-grey-darker w-6"
+            class="fill-current mr-2 text-grey-darker group-hover:text-teal w-6"
             enable-background="new 0 0 20 20"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -35,18 +35,18 @@
               d="m17.256 12.253c-.096-.667-.611-1.187-1.274-1.342-2.577-.604-3.223-2.088-3.332-3.734-.457-.085-1.27-.177-2.65-.177s-2.193.092-2.65.177c-.109 1.646-.755 3.13-3.332 3.734-.663.156-1.178.675-1.274 1.342l-.497 3.442c-.175 1.212.715 2.305 1.953 2.305h11.6c1.237 0 2.128-1.093 1.953-2.305zm-7.256 3.239c-1.395 0-2.526-1.12-2.526-2.5s1.131-2.5 2.526-2.5 2.526 1.12 2.526 2.5-1.132 2.5-2.526 2.5zm9.95-9.492c-.024-1.5-3.842-3.999-9.95-4-6.109.001-9.927 2.5-9.95 4s.021 3.452 2.535 3.127c2.941-.381 2.76-1.408 2.76-2.876 0-1.024 2.392-1.271 4.655-1.271s4.654.247 4.655 1.271c0 1.468-.181 2.495 2.76 2.876 2.513.325 2.558-1.627 2.535-3.127z"
             />
           </svg>
-          <span>
+          <span class="text-grey-darker group-hover:text-teal-dark">
             Free Call: <strong>{{ .Site.Params.phone }}</strong>
           </span>
         </a>
       </div>
       <div class="md:pr-4 w-full md:w-1/2">
         <a
-          class="bg-blue-lightest border-2 flex items-center justify-center max-w-sm mb-4 md:mb-0 p-3 rounded-full hover:shadow w-full"
+          class="group bg-blue-lightest border-2 flex items-center justify-center max-w-sm mb-4 md:mb-0 p-3 rounded-full hover:shadow w-full"
           href="mailto:{{ .Site.Params.email }}"
         >
           <svg
-            class="fill-current mr-2 text-grey-darker w-6"
+            class="fill-current mr-2 text-grey-darker group-hover:text-teal w-6"
             enable-background="new 0 0 20 20"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@
               d="m14.608 12.172c0 .84.239 1.175.864 1.175 1.393 0 2.28-1.775 2.28-4.727 0-4.512-3.288-6.672-7.393-6.672-4.223 0-8.064 2.832-8.064 8.184 0 5.112 3.36 7.896 8.52 7.896 1.752 0 2.928-.192 4.727-.792l.386 1.607c-1.776.577-3.674.744-5.137.744-6.768 0-10.393-3.72-10.393-9.456 0-5.784 4.201-9.72 9.985-9.72 6.024 0 9.215 3.6 9.215 8.016 0 3.744-1.175 6.6-4.871 6.6-1.681 0-2.784-.672-2.928-2.161-.432 1.656-1.584 2.161-3.145 2.161-2.088 0-3.84-1.609-3.84-4.848 0-3.264 1.537-5.28 4.297-5.28 1.464 0 2.376.576 2.782 1.488l.697-1.272h2.016v7.057zm-2.951-3.168c0-1.319-.985-1.872-1.801-1.872-.888 0-1.871.719-1.871 2.832 0 1.68.744 2.616 1.871 2.616.792 0 1.801-.504 1.801-1.896z"
             />
           </svg>
-          <span>
+          <span class="text-grey-darker group-hover:text-teal-dark">
             <strong>{{ .Site.Params.email }}</strong>
           </span>
         </a>
