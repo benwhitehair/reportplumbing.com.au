@@ -20,11 +20,11 @@ body {
 }
 
 main a {
-  @apply font-bold;
+  @apply font-bold text-teal-dark;
 }
 
 a:hover {
-  @apply text-teal-dark;
+  @apply text-teal;
 }
 
 .menu-current {
