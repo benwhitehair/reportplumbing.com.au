@@ -1,216 +1,134 @@
 {{ define "head" }}
-<script
-  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-  async
-></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async></script>
 {{ end }}
 
 {{ define "main" }}
-<main
-  class="bg-white flex flex-col max-w-lg mx-auto md:my-8 overflow-scroll md:rounded-lg shadow-lg w-full"
->
-  {{ partial "header" . }}
-  <div class="main max-w-md mx-auto px-4 sm:px-8 py-8">
-    <h1 class="pt-4 m-0" id="report-plumbing-img-logotype-png-report-plumbing">
-      <img
-        src="/img/logotype.png"
-        alt="Report Plumbing"
-        title="Report Plumbing"
-      />
-    </h1>
+<h1 class="pt-4 m-0" id="report-plumbing-img-logotype-png-report-plumbing">
+  <img src="/img/logotype.png" alt="Report Plumbing" title="Report Plumbing" />
+</h1>
 
-    <div class="flex flex-wrap text-sm justify-start md:justify-start my-6">
-      <div class="group md:pr-4 w-full md:w-1/2">
-        <a
-          class="bg-blue-lightest border-2 flex items-center justify-center max-w-sm mb-4 md:mb-0 mr-2 p-3 rounded-full hover:shadow w-full"
-          href="tel:{{ .Site.Params.phone }}"
-        >
-          <svg
-            class="fill-current mr-2 text-grey-darker group-hover:text-teal w-6"
-            enable-background="new 0 0 20 20"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m17.256 12.253c-.096-.667-.611-1.187-1.274-1.342-2.577-.604-3.223-2.088-3.332-3.734-.457-.085-1.27-.177-2.65-.177s-2.193.092-2.65.177c-.109 1.646-.755 3.13-3.332 3.734-.663.156-1.178.675-1.274 1.342l-.497 3.442c-.175 1.212.715 2.305 1.953 2.305h11.6c1.237 0 2.128-1.093 1.953-2.305zm-7.256 3.239c-1.395 0-2.526-1.12-2.526-2.5s1.131-2.5 2.526-2.5 2.526 1.12 2.526 2.5-1.132 2.5-2.526 2.5zm9.95-9.492c-.024-1.5-3.842-3.999-9.95-4-6.109.001-9.927 2.5-9.95 4s.021 3.452 2.535 3.127c2.941-.381 2.76-1.408 2.76-2.876 0-1.024 2.392-1.271 4.655-1.271s4.654.247 4.655 1.271c0 1.468-.181 2.495 2.76 2.876 2.513.325 2.558-1.627 2.535-3.127z"
-            />
-          </svg>
-          <span class="text-grey-darker group-hover:text-teal">
-            Free Call:
-            <strong
-              class="text-grey-darker group-hover:text-teal-dark"
-              >{{ .Site.Params.phone }}</strong
-            >
-          </span>
-        </a>
-      </div>
-      <div class="md:pr-4 w-full md:w-1/2">
-        <a
-          class="group bg-blue-lightest border-2 flex items-center justify-center max-w-sm mb-4 md:mb-0 p-3 rounded-full hover:shadow w-full"
-          href="mailto:{{ .Site.Params.email }}"
-        >
-          <svg
-            class="fill-current mr-2 text-grey-darker group-hover:text-teal w-6"
-            enable-background="new 0 0 20 20"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m14.608 12.172c0 .84.239 1.175.864 1.175 1.393 0 2.28-1.775 2.28-4.727 0-4.512-3.288-6.672-7.393-6.672-4.223 0-8.064 2.832-8.064 8.184 0 5.112 3.36 7.896 8.52 7.896 1.752 0 2.928-.192 4.727-.792l.386 1.607c-1.776.577-3.674.744-5.137.744-6.768 0-10.393-3.72-10.393-9.456 0-5.784 4.201-9.72 9.985-9.72 6.024 0 9.215 3.6 9.215 8.016 0 3.744-1.175 6.6-4.871 6.6-1.681 0-2.784-.672-2.928-2.161-.432 1.656-1.584 2.161-3.145 2.161-2.088 0-3.84-1.609-3.84-4.848 0-3.264 1.537-5.28 4.297-5.28 1.464 0 2.376.576 2.782 1.488l.697-1.272h2.016v7.057zm-2.951-3.168c0-1.319-.985-1.872-1.801-1.872-.888 0-1.871.719-1.871 2.832 0 1.68.744 2.616 1.871 2.616.792 0 1.801-.504 1.801-1.896z"
-            />
-          </svg>
-          <span class="text-grey-darker group-hover:text-teal-dark">
-            <strong>{{ .Site.Params.email }}</strong>
-          </span>
-        </a>
-      </div>
-    </div>
-
-    <h2 class="mt-0" id="need-an-affordable-and-reliable-plumber-fast">
-      Need an affordable and reliable plumber – fast?
-    </h2>
-
-    <p>
-      Then call Port Macquarie’s <strong>Report Plumbing</strong>. With
-      <em><strong>over 20 years experience</strong></em> we cater to all your
-      plumbing needs — covering all domestic and commercial work.
-    </p>
-
-    <div class="flex flex-wrap font-bold mb-4 text-grey-darker text-lg">
-      <ul class="list-reset m-0 p-2 pb-0 w-full md:w-1/2">
-        <li class="flex mb-3">
-          <span class="inline-flex items-center mr-2">
-            <svg
-              class="fill-current text-teal w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"
-              />
-            </svg>
-          </span>
-          <span>Old and new houses</span>
-        </li>
-
-        <li class="flex mb-3">
-          <span class="inline-flex items-center mr-2">
-            <svg
-              class="fill-current text-teal w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"
-              />
-            </svg>
-          </span>
-          <span>Water filtration</span>
-        </li>
-        <li class="flex mb-3">
-          <span class="inline-flex items-center mr-2">
-            <svg
-              class="fill-current text-teal w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"
-              />
-            </svg>
-          </span>
-          <span>Burst and broken pipes</span>
-        </li>
-        <li class="flex mb-3">
-          <span class="inline-flex items-center mr-2">
-            <svg
-              class="fill-current text-teal w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"
-              />
-            </svg>
-          </span>
-          <span>Blocked drains and toilets</span>
-        </li>
-      </ul>
-
-      <ul class="list-reset m-0 p-2 pt-0 w-full md:w-1/2">
-        <li class="flex mb-3">
-          <span class="inline-flex items-center mr-2">
-            <svg
-              class="fill-current text-teal w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"
-              />
-            </svg>
-          </span>
-          <span>Installation and cleaning of rainwater tanks</span>
-        </li>
-        <li class="flex mb-3">
-          <span class="inline-flex items-center mr-2">
-            <svg
-              class="fill-current text-teal w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"
-              />
-            </svg>
-          </span>
-          <span>Storm water systems</span>
-        </li>
-        <li class="flex mb-3">
-          <span class="inline-flex items-center mr-2">
-            <svg
-              class="fill-current text-teal w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"
-              />
-            </svg>
-          </span>
-          <span>Gas works</span>
-        </li>
-      </ul>
-    </div>
-
-    <p>
-      I am a Port Macquarie plumber, covering an area from the mountains to the
-      beach. Happy to go bush, cross the river to the North Shore, visit
-      Wauchope, Laurieton, Kew <em>and</em> Kempsey.
-    </p>
-
-    <p>No area too large and no job too small.</p>
-
-    <p>
-      Report Plumbing provides professional, prompt service and leave no mess
-      behind.
-    </p>
-
-    <p>For all your plumbing work contact us today:</p>
-
-    <p>
-      Free Call:
-      <a href="tel:{{ .Site.Params.phone }}"
-        ><strong>{{ .Site.Params.phone }}</strong></a
-      >
-    </p>
-
-    <p>
-      Email:
-      <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
-    </p>
+<div class="flex flex-wrap text-sm justify-start md:justify-start my-6">
+  <div class="group md:pr-4 w-full md:w-1/2">
+    <a class="bg-blue-lightest border-2 flex items-center justify-center max-w-sm mb-4 md:mb-0 mr-2 p-3 rounded-full hover:shadow w-full" href="tel:{{ .Site.Params.phone }}">
+      <svg class="fill-current mr-2 text-grey-darker group-hover:text-teal w-6" enable-background="new 0 0 20 20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="m17.256 12.253c-.096-.667-.611-1.187-1.274-1.342-2.577-.604-3.223-2.088-3.332-3.734-.457-.085-1.27-.177-2.65-.177s-2.193.092-2.65.177c-.109 1.646-.755 3.13-3.332 3.734-.663.156-1.178.675-1.274 1.342l-.497 3.442c-.175 1.212.715 2.305 1.953 2.305h11.6c1.237 0 2.128-1.093 1.953-2.305zm-7.256 3.239c-1.395 0-2.526-1.12-2.526-2.5s1.131-2.5 2.526-2.5 2.526 1.12 2.526 2.5-1.132 2.5-2.526 2.5zm9.95-9.492c-.024-1.5-3.842-3.999-9.95-4-6.109.001-9.927 2.5-9.95 4s.021 3.452 2.535 3.127c2.941-.381 2.76-1.408 2.76-2.876 0-1.024 2.392-1.271 4.655-1.271s4.654.247 4.655 1.271c0 1.468-.181 2.495 2.76 2.876 2.513.325 2.558-1.627 2.535-3.127z"/>
+      </svg>
+      <span class="text-grey-darker group-hover:text-teal">
+        Free Call:
+        <strong class="text-grey-darker group-hover:text-teal-dark">{{ .Site.Params.phone }}</strong>
+      </span>
+    </a>
   </div>
-</main>
+  <div class="md:pr-4 w-full md:w-1/2">
+    <a class="group bg-blue-lightest border-2 flex items-center justify-center max-w-sm mb-4 md:mb-0 p-3 rounded-full hover:shadow w-full" href="mailto:{{ .Site.Params.email }}">
+      <svg class="fill-current mr-2 text-grey-darker group-hover:text-teal w-6" enable-background="new 0 0 20 20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="m14.608 12.172c0 .84.239 1.175.864 1.175 1.393 0 2.28-1.775 2.28-4.727 0-4.512-3.288-6.672-7.393-6.672-4.223 0-8.064 2.832-8.064 8.184 0 5.112 3.36 7.896 8.52 7.896 1.752 0 2.928-.192 4.727-.792l.386 1.607c-1.776.577-3.674.744-5.137.744-6.768 0-10.393-3.72-10.393-9.456 0-5.784 4.201-9.72 9.985-9.72 6.024 0 9.215 3.6 9.215 8.016 0 3.744-1.175 6.6-4.871 6.6-1.681 0-2.784-.672-2.928-2.161-.432 1.656-1.584 2.161-3.145 2.161-2.088 0-3.84-1.609-3.84-4.848 0-3.264 1.537-5.28 4.297-5.28 1.464 0 2.376.576 2.782 1.488l.697-1.272h2.016v7.057zm-2.951-3.168c0-1.319-.985-1.872-1.801-1.872-.888 0-1.871.719-1.871 2.832 0 1.68.744 2.616 1.871 2.616.792 0 1.801-.504 1.801-1.896z"/>
+      </svg>
+      <span class="text-grey-darker group-hover:text-teal-dark">
+        <strong>{{ .Site.Params.email }}</strong>
+      </span>
+    </a>
+  </div>
+</div>
+
+<h2 class="mt-0" id="need-an-affordable-and-reliable-plumber-fast">
+  Need an affordable and reliable plumber – fast?
+</h2>
+
+<p>
+  Then call Port Macquarie’s <strong>Report Plumbing</strong>. With
+  <em><strong>over 20 years experience</strong></em> we cater to all your
+  plumbing needs — covering all domestic and commercial work.
+</p>
+
+<div class="flex flex-wrap font-bold mb-4 text-grey-darker text-lg">
+  <ul class="list-reset m-0 p-2 pb-0 w-full md:w-1/2">
+    <li class="flex mb-3">
+      <span class="inline-flex items-center mr-2">
+        <svg class="fill-current text-teal w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"/>
+        </svg>
+      </span>
+      <span>Old and new houses</span>
+    </li>
+
+    <li class="flex mb-3">
+      <span class="inline-flex items-center mr-2">
+        <svg class="fill-current text-teal w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"/>
+        </svg>
+      </span>
+      <span>Water filtration</span>
+    </li>
+    <li class="flex mb-3">
+      <span class="inline-flex items-center mr-2">
+        <svg class="fill-current text-teal w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"/>
+        </svg>
+      </span>
+      <span>Burst and broken pipes</span>
+    </li>
+    <li class="flex mb-3">
+      <span class="inline-flex items-center mr-2">
+        <svg class="fill-current text-teal w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"/>
+        </svg>
+      </span>
+      <span>Blocked drains and toilets</span>
+    </li>
+  </ul>
+
+  <ul class="list-reset m-0 p-2 pt-0 w-full md:w-1/2">
+    <li class="flex mb-3">
+      <span class="inline-flex items-center mr-2">
+        <svg class="fill-current text-teal w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"/>
+        </svg>
+      </span>
+      <span>Installation and cleaning of rainwater tanks</span>
+    </li>
+    <li class="flex mb-3">
+      <span class="inline-flex items-center mr-2">
+        <svg class="fill-current text-teal w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"/>
+        </svg>
+      </span>
+      <span>Storm water systems</span>
+    </li>
+    <li class="flex mb-3">
+      <span class="inline-flex items-center mr-2">
+        <svg class="fill-current text-teal w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29L9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z"/>
+        </svg>
+      </span>
+      <span>Gas works</span>
+    </li>
+  </ul>
+</div>
+
+<p>
+  I am a Port Macquarie plumber, covering an area from the mountains to the
+  beach. Happy to go bush, cross the river to the North Shore, visit Wauchope,
+  Laurieton, Kew <em>and</em> Kempsey.
+</p>
+
+<p>No area too large and no job too small.</p>
+
+<p>
+  Report Plumbing provides professional, prompt service and leave no mess
+  behind.
+</p>
+
+<p>For all your plumbing work contact us today:</p>
+
+<p>
+  Free Call:
+  <a href="tel:{{ .Site.Params.phone }}"><strong>{{ .Site.Params.phone }}</strong></a>
+</p>
+
+<p>
+  Email: <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+</p>
 {{ end }}
 
 {{ define "script" }}

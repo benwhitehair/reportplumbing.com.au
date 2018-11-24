@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
-{{ partial "head" . }}
+
+  {{ partial "head" . }}
+
 <body class="antialiased border-t-8 border-teal-dark font-sans text-grey-darkest">
-  {{ block "main" . }}
-  {{ partial "main" . }}
-  {{ end }}
+
+  <main class="bg-white flex flex-col max-w-lg mx-auto md:my-8 overflow-scroll md:rounded-lg shadow-lg w-full">
+
+    {{ partial "header" . }}
+
+    <div class="main max-w-md mx-auto px-4 sm:px-8 py-8">
+      {{ block "main" . }}
+      {{ .Content }}
+      {{ end }}
+    </div>
+
+  </main>
+
   {{ partial "footer" . }}
-  {{- block "script" . }}{{ end }}
+
+  {{ block "script" . }}{{ end }}
+
 </body>
 
 </html>
