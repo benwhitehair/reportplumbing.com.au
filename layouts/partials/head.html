@@ -3,23 +3,22 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>
-    {{- block "title" . }}
-    {{- if .Title }}
-    {{- .Site.Title }}: {{ .Title }}
-    {{- else }}
-    {{- .Site.Title }}
-    {{- end }}
-    {{- end -}}
+    {{ block "title" . }}
+    {{ if .Title }}
+    {{ .Site.Title }}: {{ .Title }}
+    {{ else }}
+    {{ .Site.Title }}
+    {{ end }}
+    {{ end }}
   </title>
   <meta id="description" name="description" content="
-  {{- block "description" . }}
-  {{- if .Description }}
-  {{- .Description }}
-  {{- else }}
-  {{- .Site.Params.SiteDescription }}
-  {{- end }}
-  {{- end -}}">
-  
+  {{ block "description" . }}
+  {{ if .Description }}
+  {{ .Description }}
+  {{ else }}
+  {{ .Site.Params.SiteDescription }}
+  {{ end }}
+  {{ end }}">
   <meta name="robots" content="index, follow">
   {{ .Hugo.Generator }}
   <link rel="canonical" href="{{ .URL | absURL }}">
@@ -27,20 +26,15 @@
   <meta name="twitter:site" content="{{ .Site.Params.twitter }}">
   <meta name="twitter:url" property="og:url" content="{{ .URL | absURL }}">
   <meta name="twitter:title" property="og:title" content="
-  {{- block "title" . }}{{- end -}}
-  ">
+  {{ block "title" . }}{{ end }}">
   <meta name="twitter:description" property="og:description" content="
-  {{- block "description" . }}{{- end -}}
-  ">
+  {{ block "description" . }}{{ end }}">
   <meta name="twitter:image" property="og:image" content="
-  {{- if eq .Type "page" -}}
-  {{- .Site.BaseURL }}/img/logo.png
-  {{- else -}}
+  {{ if eq .Type "page" }}
+  {{ .Site.BaseURL }}/img/logo.png
+  {{ else }}
   {{ .Site.BaseURL }}{{ .Params.image }}
-  {{- end -}}
-  ">
-  
-
+  {{ end }}">
   <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png?v=XBJvKlqw7z">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png?v=XBJvKlqw7z">
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png?v=XBJvKlqw7z">
@@ -50,7 +44,6 @@
   <meta name="msapplication-TileColor" content="#0084a0">
   <meta name="msapplication-config" content="/img/browserconfig.xml?v=XBJvKlqw7z">
   <meta name="theme-color" content="#0084a0">
-  
   <style>
     @font-face {
       font-family: 'Nunito';
@@ -60,7 +53,6 @@
         url('/fonts/nunito-v9-latin-regular.woff2') format('woff2'),
         url('/fonts/nunito-v9-latin-regular.woff') format('woff');
     }
-
     @font-face {
       font-family: 'Nunito';
       font-style: italic;
@@ -69,7 +61,6 @@
         url('/fonts/nunito-v9-latin-italic.woff2') format('woff2'),
         url('/fonts/nunito-v9-latin-italic.woff') format('woff');
     }
-
     @font-face {
       font-family: 'Nunito';
       font-style: normal;
@@ -78,7 +69,6 @@
         url('/fonts/nunito-v9-latin-800.woff2') format('woff2'),
         url('/fonts/nunito-v9-latin-800.woff') format('woff');
     }
-
     @font-face {
       font-family: 'Nunito';
       font-style: italic;
@@ -87,8 +77,6 @@
         url('/fonts/nunito-v9-latin-800italic.woff2') format('woff2'),
         url('/fonts/nunito-v9-latin-800italic.woff') format('woff');
     }
-
-
     @font-face {
       font-family: 'Zilla Slab';
       font-style: normal;
@@ -99,5 +87,5 @@
     }
   </style>
   {{ partial "stylesheet" . }}
-  {{- block "head" . }}{{ end }}
+  {{ block "head" . }}{{ end }}
 </head>
