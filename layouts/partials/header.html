@@ -1,22 +1,24 @@
-<nav class="nav bg-blue-lightest border-b-2 md:border-b flex flex-wrap items-center justify-between">
+<header class="border-t-8 border-teal-dark">
+  <nav class="nav bg-blue-lightest border-b-2 md:border-b flex flex-wrap items-center justify-between">
 
-  <a class="flex flex-1 flex-no-shrink items-center md:justify-center p-3 md:pt-6" href="/">
-    <img class="flex-no-shrink md:h-24 w-auto" src="/img/header-logo.png" alt="Report Plumbing">
-  </a>
+    <a class="flex flex-1 flex-no-shrink items-center md:justify-center p-3 md:pt-6" href="/">
+      <img class="flex-no-shrink md:h-24 w-auto" src="/img/header-logo.png" alt="Report Plumbing">
+    </a>
 
-  <input class="menu-btn hidden" type="checkbox" id="menu-btn">
-  <label class="menu-icon flex cursor-pointer md:hidden items-center mx-4 px-2 py-4 relative rounded select-none" for="menu-btn">
-    <span class="font-bold mr-4 text-grey-darker text-sm">MENU</span>
-    <span class="navicon bg-grey-darker flex items-center relative"></span>
-  </label>
+    <input class="menu-btn hidden" type="checkbox" id="menu-btn">
+    <label class="menu-icon flex cursor-pointer md:hidden items-center mx-4 px-2 py-4 relative rounded select-none" for="menu-btn">
+      <span class="font-bold mr-4 text-grey-darker text-sm">MENU</span>
+      <span class="navicon bg-grey-darker flex items-center relative"></span>
+    </label>
 
-  <ul class="menu md:border-b md:border-none flex items-center justify-center list-reset mx-4 md:mx-0 w-full">
-    {{- range .Site.Menus.main }}
-    <li class="border-t md:border-none">
-      <a href="{{ .URL }}" class="block md:border-b-4 border-blue-lightest md:inline-block md:pb-1 md:pt-3 px-2 py-3 no-underline text-grey-darkest hover:text-teal-dark{{ if or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) }} menu-current{{ end }}">
-        {{- .Title -}}
-      </a>
-    </li>
-    {{ end }}
-  </ul>
-</nav>
+    <ul class="menu md:border-b md:border-none flex items-center justify-center list-reset mx-4 md:mx-0 w-full">
+      {{- range .Site.Menus.main }}
+      <li class="border-t md:border-none">
+        <a href="{{ .URL }}" class="block md:border-b-4 border-blue-lightest md:inline-block md:pb-1 md:pt-3 px-2 py-3 no-underline text-grey-darkest hover:text-teal-dark{{ if or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) }} menu-current{{ end }}">
+          {{- .Title -}}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

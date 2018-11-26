@@ -934,9 +934,6 @@ body {
   background: -webkit-linear-gradient(top, rgba(187, 222, 250, 1) 0%, rgba(52, 144, 220, 1) 50%, rgba(28, 61, 90, 1) 100%) no-repeat center center fixed;
   background: -o-linear-gradient(top, rgba(187, 222, 250, 1) 0%, rgba(52, 144, 220, 1) 50%, rgba(28, 61, 90, 1) 100%) no-repeat center center fixed;
   background: linear-gradient(180deg, rgba(187, 222, 250, 1) 0%, rgba(52, 144, 220, 1) 50%, rgba(28, 61, 90, 1) 100%) no-repeat center center fixed;
-  -webkit-background-size: cover;
-          background-size: cover;
-  overflow: scroll;
 }
 
 main a {
@@ -1003,23 +1000,6 @@ a:hover {
        -o-animation: fadeInUp .7s forwards 0s ease-in-out;
           animation: fadeInUp .7s forwards 0s ease-in-out;
 }
-
-/*
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.fadeInUp {
-  animation-name: fadeInUp;
-} */
 
 /* purgecss end ignore */
 
