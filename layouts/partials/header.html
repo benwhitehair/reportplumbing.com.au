@@ -11,7 +11,7 @@
       <span class="navicon bg-grey-darker flex items-center relative"></span>
     </label>
 
-    <ul class="menu md:border-b md:border-none flex items-center justify-center list-reset mx-4 md:mx-0 w-full">
+    <ul class="menu md:border-b md:border-none flex items-center justify-center list-reset mx-4 md:mx-0 md:text-sm w-full">
       {{- range .Site.Menus.main }}
       <li class="border-t md:border-none">
         <a href="{{ .URL }}" class="block md:border-b-4 border-blue-lightest md:inline-block md:pb-1 md:pt-3 px-2 py-3 no-underline text-grey-darkest hover:text-teal-dark{{ if or ( $.IsMenuCurrent "main" . ) ( $.HasMenuCurrent "main" . ) }} menu-current{{ end }}">
