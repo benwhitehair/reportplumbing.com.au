@@ -15,8 +15,6 @@ body {
       rgba(28, 61, 90, 1) 100%
     )
     no-repeat center center fixed;
-  background-size: cover;
-  overflow: scroll;
 }
 
 main a {
@@ -45,19 +43,3 @@ a:hover {
 .main {
   animation: fadeInUp 0.7s forwards 0s ease-in-out;
 }
-/*
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.fadeInUp {
-  animation-name: fadeInUp;
-} */
