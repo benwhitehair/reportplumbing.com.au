@@ -5,7 +5,7 @@
   <title>
     {{- block "title" . }}
     {{- if .Title }}
-    {{- .Title }} | {{ .Site.Title }}
+    {{- .Site.Title }}: {{ .Title }}
     {{- else }}
     {{- .Site.Title }}
     {{- end }}
