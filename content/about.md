@@ -1,8 +1,9 @@
 +++
-title = "About"
-menu = "main"
 identifier = "About"
-weight= 5
+menu = "main"
+title = "About"
+weight = 5
+
 +++
 
 ## About

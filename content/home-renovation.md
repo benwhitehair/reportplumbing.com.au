@@ -1,8 +1,9 @@
 +++
-title = "Home Renovation"
-menu = "main"
 identifier = "Home Renovation"
-weight= 2
+menu = "main"
+title = "Home Renovation"
+weight = 2
+
 +++
 
 # Home Renovation

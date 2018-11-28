@@ -1,8 +1,9 @@
 +++
-title = "Gas Works"
-menu = "main"
 identifier = "General Maintenance"
-weight= 4
+menu = "main"
+title = "Gas Works"
+weight = 4
+
 +++
 
 # Gas Works

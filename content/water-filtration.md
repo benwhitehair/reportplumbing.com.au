@@ -1,8 +1,9 @@
 +++
-title = "Water Filtration"
-menu = "main"
 identifier = "Water Filtration"
-weight= 1
+menu = "main"
+title = "Water Filtration"
+weight = 1
+
 +++
 
 # Water Filtration

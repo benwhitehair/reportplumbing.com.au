@@ -18,7 +18,7 @@
   "name": "hugo-boilerplate",
   "repository": "https://github.com/lukebennett88/hugo-boilerplate",
   "scripts": {
-    "develop": "hugo server -D",
-    "start": "hugo --gc --minify"
+    "start": "hugo server -D",
+    "build": "hugo --gc --minify"
   }
 }
