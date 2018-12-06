@@ -1,4 +1,4 @@
-baseurl           = ""
+baseurl           = "https://reportplumbing.com.au"
 disableKinds      = ["RSS", "taxonomy", "taxonomyTerm"]
 languageCode      = "en-AU"
 title             = "Report Plumbing"
