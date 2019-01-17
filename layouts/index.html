@@ -31,10 +31,9 @@
         />
       </svg>
       <span class="text-grey-darker group-hover:text-teal">
-        Free Call:
-        <strong
-          class="text-grey-darker group-hover:text-teal-dark"
-          >{{ .Site.Params.phone }}</strong
+        Phone:
+        <strong class="text-grey-darker group-hover:text-teal-dark"
+          >0404 222 244</strong
         >
       </span>
     </a>
@@ -198,10 +197,8 @@
 <p>For all your plumbing work contact us today:</p>
 
 <p>
-  Free Call:
-  <a href="tel:{{ .Site.Params.phone }}"
-    ><strong>{{ .Site.Params.phone }}</strong></a
-  >
+  Phone:
+  <a href="tel:{{ .Site.Params.phone }}"><strong>0404 222 244</strong></a>
 </p>
 
 <p>
@@ -212,10 +209,10 @@
 {{ define "script" }}
 <script async>
   if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
+    window.netlifyIdentity.on('init', user => {
       if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+        window.netlifyIdentity.on('login', () => {
+          document.location.href = '/admin/';
         });
       }
     });
