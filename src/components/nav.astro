@@ -1,0 +1,36 @@
+---
+import { siteConfig } from '../lib/site-config';
+import { Image } from 'astro:assets';
+import headerLogo from '../assets/header-logo.png';
+---
+
+<nav class="border-b bg-ice">
+	<a class="flex shrink-0 items-center p-6 md:justify-center" href="/"
+		><Image
+			class="h-24 w-auto shrink-0 object-contain"
+			src={headerLogo}
+			alt="Report Plumbing"
+		/></a
+	>
+	<ul class="mx-auto w-full text-center">
+		{
+			siteConfig.siteNavigation.map((navItem) => {
+				const isCurrent = Astro.url.pathname === navItem.slug;
+				return (
+					<li class="inline">
+						<a
+							class:list={[
+								'inline-block px-4 py-2 text-sm font-bold text-gray-700',
+								isCurrent ? 'border-b-4 border-b-deep_ocean' : '',
+								'hover:text-deep_ocean',
+							]}
+							href={navItem.slug}
+						>
+							{navItem.label}
+						</a>
+					</li>
+				);
+			})
+		}
+	</ul>
+</nav>

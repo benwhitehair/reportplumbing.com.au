@@ -1,0 +1,29 @@
+---
+type Props = {
+	items: string[];
+};
+
+const { items } = Astro.props;
+---
+
+<ul class="not-prose columns-2 space-y-3">
+	{
+		items.map((item) => (
+			<li class="flex items-start gap-3">
+				<span aria-hidden="true" class="flex items-center">
+					&#8203; {/* Zero width space */}
+					<span class="flex h-0 items-center">
+						<svg
+							class="size-6 fill-current text-mist"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 20 20"
+						>
+							<path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM6.7 9.29 9 11.6l4.3-4.3 1.4 1.42L9 14.4l-3.7-3.7 1.4-1.42z" />
+						</svg>
+					</span>
+				</span>
+				<span class="font-bold">{item}</span>
+			</li>
+		))
+	}
+</ul>

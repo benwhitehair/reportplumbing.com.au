@@ -1,9 +1,0 @@
-/* purgecss start ignore */
-@import 'tailwindcss/preflight';
-/* purgecss end ignore */
-@import 'tailwindcss/components';
-/* Site Specific */
-/* purgecss start ignore */
-@import 'site';
-/* purgecss end ignore */
-@import 'tailwindcss/utilities';

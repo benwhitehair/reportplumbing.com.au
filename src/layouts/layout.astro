@@ -1,0 +1,71 @@
+---
+import '@fontsource-variable/nunito';
+import '@fontsource/zilla-slab';
+import '../styles/tailwind.css';
+
+import Footer from '../components/footer.astro';
+import Nav from '../components/nav.astro';
+import { siteConfig } from '../lib/site-config';
+
+interface Props {
+	description?: string;
+	title?: string;
+}
+
+const { description = siteConfig.description, title = siteConfig.title } =
+	Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link
+			rel="manifest"
+			href="/manifest.webmanifest"
+			crossorigin="use-credentials"
+		/>
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={siteConfig.baseUrl} />
+		<meta property="og:site_name" content={title} />
+		<meta property="og:locale" content="en" />
+		<meta property="og:image" content={`${siteConfig.baseUrl}/hero.jpg`} />
+		<meta property="og:image:width" content="960" />
+		<meta property="og:image:height" content="539" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={`${siteConfig.baseUrl}/hero.jpg`} />
+		<meta name="twitter:image:width" content="960" />
+		<meta name="twitter:image:height" content="539" />
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="any" />
+		<link
+			rel="apple-touch-icon"
+			href="/apple-icon.png"
+			type="image/png"
+			sizes="180x180"
+		/>
+		<link rel="sitemap" href="/sitemap-index.xml" />
+	</head>
+	<body
+		class="flex min-h-svh flex-col bg-[linear-gradient(180deg,rgba(187,222,250,1)_0%,rgba(52,144,220,1)_50%,rgba(28,61,90,1)_100%)_no-repeat_center_center_fixed] font-sans"
+	>
+		<div
+			class="mx-auto flex w-full max-w-4xl flex-col border-t-8 border-deep_ocean shadow-lg"
+		>
+			<Nav />
+			<main class="w-full bg-white px-4 py-8 sm:px-8">
+				<div class="mx-auto flex max-w-xl flex-col">
+					<slot />
+				</div>
+			</main>
+		</div>
+		<Footer />
+	</body>
+</html>

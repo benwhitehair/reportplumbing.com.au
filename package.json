@@ -1,24 +1,45 @@
 {
-  "author": {
-    "email": "luke.bennett88@gmail.com",
-    "name": "Luke Bennett",
-    "url": "https://lukebennett.me"
-  },
-  "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.1.0",
-    "autoprefixer": "^9.3.1",
-    "postcss": "^7.0.6",
-    "postcss-cli": "^6.0.1",
-    "postcss-import": "^12.0.1",
-    "tailwindcss": "^0.7.2"
-  },
-  "description": "Get up a new Hugo site up and running quickly",
-  "license": "MIT",
-  "main": "index.js",
-  "name": "hugo-boilerplate",
-  "repository": "https://github.com/lukebennett88/hugo-boilerplate",
-  "scripts": {
-    "start": "hugo server -D",
-    "build": "hugo --gc --minify"
-  }
+	"name": "reportplumbing",
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"astro": "astro",
+		"build": "astro check && astro build",
+		"check": "pnpm run check:format && pnpm run check:lint && pnpm run check:types",
+		"check:format": "pnpm prettier . --cache --check",
+		"check:lint": "TIMING=1 eslint \"src/**/*.{js,ts,jsx,tsx,astro}\" --max-warnings 0 --report-unused-disable-directives --cache --cache-location ./node_modules/.cache/eslint",
+		"check:types": "tsc --noEmit",
+		"dev": "astro dev",
+		"fix": "pnpm fix:lint && pnpm fix:format",
+		"fix:format": "pnpm prettier . --cache --write",
+		"fix:lint": "TIMING=1 eslint \"src/**/*.{js,ts,jsx,tsx,astro}\" --max-warnings 0 --report-unused-disable-directives --cache --cache-location ./node_modules/.cache/eslint --fix",
+		"preview": "astro preview",
+		"start": "astro dev"
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.7.0",
+		"@astrojs/markdoc": "^0.11.0",
+		"@astrojs/netlify": "^5.3.0",
+		"@astrojs/sitemap": "^3.1.5",
+		"@astrojs/tailwind": "^5.1.0",
+		"@epic-web/config": "^1.11.2",
+		"@fontsource-variable/nunito": "^5.0.19",
+		"@fontsource/zilla-slab": "^5.0.13",
+		"astro": "^4.10.2",
+		"tailwindcss": "^3.4.4",
+		"typescript": "^5.4.5"
+	},
+	"devDependencies": {
+		"@eslint/compat": "^1.1.0",
+		"@eslint/js": "^9.5.0",
+		"@tailwindcss/typography": "^0.5.13",
+		"eslint": "9.x",
+		"eslint-plugin-react": "^7.34.2",
+		"globals": "^15.4.0",
+		"prettier": "^3.3.2",
+		"prettier-plugin-astro": "^0.14.0",
+		"prettier-plugin-tailwindcss": "^0.6.4",
+		"sharp": "^0.33.4",
+		"typescript-eslint": "^7.13.0"
+	}
 }

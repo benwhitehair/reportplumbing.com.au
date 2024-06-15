@@ -1,0 +1,91 @@
+---
+import StyledList from '../components/styled-list.astro';
+import EmailIcon from '../components/icons/email.astro';
+import PhoneIcon from '../components/icons/phone.astro';
+import Layout from '../layouts/layout.astro';
+import { siteConfig } from '../lib/site-config';
+
+const contactDetails = [
+	{
+		label: 'Phone',
+		value: siteConfig.phone,
+		href: `tel:${siteConfig.phone}`,
+		icon: PhoneIcon,
+	},
+	{
+		label: 'Email',
+		value: siteConfig.email,
+		href: `mailto:${siteConfig.email}`,
+		icon: EmailIcon,
+	},
+];
+---
+
+<Layout>
+	<div class="flex flex-col gap-6">
+		<div class="flex flex-wrap items-end gap-4">
+			{
+				contactDetails.map((item) => (
+					<a
+						class:list={[
+							'flex flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-ice px-6 py-3 text-sm font-bold shadow transition',
+							'hover:-translate-y-1 hover:shadow-lg',
+						]}
+						href={item.href}
+					>
+						<item.icon class="w-6 fill-current text-gray-600 group-hover:text-mist" />
+						{item.label}: {item.value}
+					</a>
+				))
+			}
+		</div>
+		<div class="prose">
+			<h1 class="font-display text-gray-700">
+				Need an affordable and reliable plumber – fast?
+			</h1>
+			<p>
+				Then call Port Macquarie’s <span class="font-bold">Report Plumbing</span
+				>. With over <span class="font-bold">25 years experience</span> we cater
+				to all your plumbing needs — covering all domestic and commercial work.
+			</p>
+			<StyledList
+				items={[
+					'Old and new houses',
+					'Water filtration',
+					'Burst and broken pipes',
+					'Blocked drains and toilets',
+					'Installation and cleaning of rainwater tanks',
+					'Storm water systems',
+					'Gas works',
+				]}
+			/>
+			<p>
+				Report Plumbing is based in Port Macquarie, and services the entire
+				area. From the mountains to the beach.
+			</p>
+			<p>
+				We're quite happy to go bush, cross the river to the North Shore, West
+				to Wauchope, South to Laurieton or Kew, and even as far North as
+				Kempsey.
+			</p>
+			<p>No area too large, and no job too small.</p>
+			<p>
+				Report Plumbing provides professional, prompt, service and leave no mess
+				behind.
+			</p>
+			<p>For all your plumbing work contact us today:</p>
+			<ul>
+				{
+					contactDetails.map((item) => (
+						<li>
+							{item.label}:{' '}
+							<a class="font-bold text-deep_ocean" href={item.href}>
+								{item.value}
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+	</div>
+</Layout>

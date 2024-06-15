@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+
+import Layout from '../layouts/layout.astro';
+import { siteConfig } from '../lib/site-config';
+
+export async function getStaticPaths() {
+	const pageEntries = await getCollection('page');
+	return pageEntries.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry },
+	}));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={`${entry.data.title} | ${siteConfig.title}`}>
+	<div class="flex flex-col gap-6">
+		<div class="prose">
+			<h1 class="font-display uppercase">
+				{entry.data.title}
+			</h1>
+			<Content />
+		</div>
+	</div>
+</Layout>

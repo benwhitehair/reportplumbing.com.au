@@ -1,0 +1,15 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"tailwindCSS.experimental.classRegex": [
+		"class\\:list\\s*=\\s*\\{([^}]*)\\}",
+		"class\\:list\\s*=\\s*\"([^\"]*)\"",
+		"class\\:list\\s*=\\s*'([^']*)'"
+	],
+	"tailwindCSS.includeLanguages": {
+		"astro": "html"
+	}
+}

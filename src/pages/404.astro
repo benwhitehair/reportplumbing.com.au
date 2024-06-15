@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/layout.astro';
+import { siteConfig } from '../lib/site-config';
+---
+
+<Layout title={`404: Page Not Found | ${siteConfig.title}`}>
+	<div class="prose">
+		<h1 class="font-display uppercase">404: page not found</h1>
+		<p>Looks like the website has sprung a leak!</p>
+		<p>
+			Maybe try going <a href="/">back to the home page?</a>
+		</p>
+	</div>
+</Layout>
