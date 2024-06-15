@@ -2,27 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	background: linear-gradient(
-			180deg,
-			rgba(187, 222, 250, 1) 0%,
-			rgba(52, 144, 220, 1) 50%,
-			rgba(28, 61, 90, 1) 100%
-		)
-		no-repeat center center fixed;
-}
-
-@keyframes fadeInUp {
-	0% {
-		transform: translateY(2em);
-		opacity: 0;
+@layer base {
+	:root {
+		scrollbar-gutter: stable;
 	}
-	100% {
-		transform: translateY(0);
-		opacity: 1;
-	}
-}
 
-main > * {
-	animation: fadeInUp 0.7s forwards 0s ease-in-out;
+	body {
+		background: linear-gradient(
+				180deg,
+				rgba(187, 222, 250, 1) 0%,
+				rgba(52, 144, 220, 1) 50%,
+				rgba(28, 61, 90, 1) 100%
+			)
+			no-repeat center center fixed;
+	}
+
+	@keyframes fadeInUp {
+		0% {
+			transform: translateY(2em);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
+	main > * {
+		animation: fadeInUp 0.7s forwards 0s ease-in-out;
+	}
 }

@@ -3,6 +3,7 @@ import '@fontsource-variable/nunito';
 import '@fontsource/zilla-slab';
 import '../styles/tailwind.css';
 
+import { ViewTransitions } from 'astro:transitions';
 import Footer from '../components/footer.astro';
 import Nav from '../components/nav.astro';
 import { siteConfig } from '../lib/site-config';
@@ -52,16 +53,17 @@ const { description = siteConfig.description, title = siteConfig.title } =
 			sizes="180x180"
 		/>
 		<link rel="sitemap" href="/sitemap-index.xml" />
+		<ViewTransitions />
 	</head>
 	<body
 		class="flex min-h-svh flex-col bg-[linear-gradient(180deg,rgba(187,222,250,1)_0%,rgba(52,144,220,1)_50%,rgba(28,61,90,1)_100%)_no-repeat_center_center_fixed] font-sans"
 	>
 		<div
-			class="border-deep_ocean mx-auto flex w-full max-w-4xl flex-col border-t-8 shadow-lg"
+			class="mx-auto flex w-full max-w-4xl flex-col border-t-8 border-deep_ocean shadow-lg"
 		>
 			<Nav />
 			<main class="w-full bg-white px-4 py-8 sm:px-8">
-				<div class="mx-auto flex max-w-xl flex-col">
+				<div class="mx-auto flex w-full max-w-xl flex-col">
 					<slot />
 				</div>
 			</main>
