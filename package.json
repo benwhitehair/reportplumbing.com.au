@@ -14,32 +14,31 @@
 		"fix:format": "pnpm prettier . --cache --write",
 		"fix:lint": "TIMING=1 eslint \"src/**/*.{js,ts,jsx,tsx,astro}\" --max-warnings 0 --report-unused-disable-directives --cache --cache-location ./node_modules/.cache/eslint --fix",
 		"preview": "astro preview",
-		"start": "astro dev"
+		"start": "npx serve ./dist"
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.7.0",
-		"@astrojs/markdoc": "^0.11.0",
-		"@astrojs/netlify": "^5.3.0",
-		"@astrojs/sitemap": "^3.1.5",
+		"@astrojs/check": "^0.8.2",
+		"@astrojs/netlify": "^5.4.0",
+		"@astrojs/sitemap": "^3.1.6",
 		"@astrojs/tailwind": "^5.1.0",
-		"@epic-web/config": "^1.11.2",
+		"@epic-web/config": "^1.12.0",
 		"@fontsource-variable/nunito": "^5.0.19",
 		"@fontsource/zilla-slab": "^5.0.13",
-		"astro": "^4.10.2",
-		"tailwindcss": "^3.4.4",
-		"typescript": "^5.4.5"
+		"astro": "^4.12.1",
+		"tailwindcss": "^3.4.6",
+		"typescript": "^5.5.3"
 	},
 	"devDependencies": {
-		"@eslint/compat": "^1.1.0",
-		"@eslint/js": "^9.5.0",
+		"@eslint/compat": "^1.1.1",
+		"@eslint/js": "^9.7.0",
 		"@tailwindcss/typography": "^0.5.13",
-		"eslint": "9.x",
-		"eslint-plugin-react": "^7.34.2",
-		"globals": "^15.4.0",
-		"prettier": "^3.3.2",
-		"prettier-plugin-astro": "^0.14.0",
-		"prettier-plugin-tailwindcss": "^0.6.4",
+		"eslint": "^9.7.0",
+		"eslint-plugin-react": "^7.34.4",
+		"globals": "^15.8.0",
+		"prettier": "^3.3.3",
+		"prettier-plugin-astro": "^0.14.1",
+		"prettier-plugin-tailwindcss": "^0.6.5",
 		"sharp": "^0.33.4",
-		"typescript-eslint": "^7.13.0"
+		"typescript-eslint": "^7.16.1"
 	}
 }
