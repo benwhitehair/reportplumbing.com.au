@@ -20,13 +20,20 @@ import headerLogo from '../assets/header-logo.png';
 					<li class="inline">
 						<a
 							class:list={[
-								'inline-block px-4 py-2 text-sm font-bold text-gray-700',
-								isCurrent ? 'border-b-4 border-b-deep_ocean' : '',
+								'relative inline-block px-4 pb-3 pt-2 text-sm font-bold text-gray-700',
 								'hover:text-deep_ocean',
 							]}
 							href={navItem.slug}
 						>
 							{navItem.label}
+							{isCurrent ? (
+								<span
+									aria-hidden="true"
+									class="absolute inset-x-0 bottom-0 inline-block h-1 w-full bg-deep_ocean"
+									transition:animate="initial"
+									transition:name="nav-underline"
+								/>
+							) : null}
 						</a>
 					</li>
 				);
