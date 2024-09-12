@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/:splat/"
-  to = "/:splat"
-  status = 301
-  force = true
