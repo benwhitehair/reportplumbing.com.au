@@ -11,6 +11,9 @@ export default defineConfig({
 		edgeMiddleware: true,
 		imageCDN: true,
 	}),
+	build: {
+		format: 'file',
+	},
 	integrations: [sitemap(), tailwind()],
 	output: 'hybrid',
 	server: {
