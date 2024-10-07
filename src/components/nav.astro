@@ -2,6 +2,12 @@
 import { siteConfig } from '../lib/site-config';
 import { Image } from 'astro:assets';
 import headerLogo from '../assets/header-logo.png';
+import { makeCanonicalUrl } from '../lib/make-canonical-url';
+
+const currentUrl = makeCanonicalUrl({
+	baseUrl: Astro.site?.toString() ?? siteConfig.baseUrl,
+	pathname: Astro.url.pathname,
+});
 ---
 
 <nav class="border-b bg-ice">
@@ -15,7 +21,11 @@ import headerLogo from '../assets/header-logo.png';
 	<ul class="mx-auto w-full text-center">
 		{
 			siteConfig.siteNavigation.map((navItem) => {
-				const isCurrent = Astro.url.pathname === navItem.slug;
+				const generatedNavUrl = makeCanonicalUrl({
+					baseUrl: Astro.site?.toString() ?? siteConfig.baseUrl,
+					pathname: navItem.slug,
+				});
+				const isCurrent = currentUrl === generatedNavUrl;
 				return (
 					<li class="inline">
 						<a
