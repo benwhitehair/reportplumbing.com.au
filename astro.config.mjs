@@ -1,3 +1,5 @@
+// @ts-check
+
 import netlify from '@astrojs/netlify';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
@@ -15,7 +17,7 @@ export default defineConfig({
 		format: 'file',
 	},
 	integrations: [sitemap(), tailwind()],
-	output: 'hybrid',
+	output: 'static',
 	server: {
 		host: true,
 	},
