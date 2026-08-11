@@ -28,12 +28,12 @@ const contactDetails = [
 				contactDetails.map((item) => (
 					<a
 						class:list={[
-							'flex flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-ice px-6 py-3 text-sm font-bold shadow transition',
+							'bg-ice flex flex-1 items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold whitespace-nowrap shadow-sm transition',
 							'hover:-translate-y-1 hover:shadow-lg',
 						]}
 						href={item.href}
 					>
-						<item.icon class="w-6 fill-current text-gray-600 group-hover:text-mist" />
+						<item.icon class="group-hover:text-mist w-6 fill-current text-gray-600" />
 						{item.label}: {item.value}
 					</a>
 				))
@@ -79,7 +79,7 @@ const contactDetails = [
 					contactDetails.map((item) => (
 						<li>
 							{item.label}:{' '}
-							<a class="font-bold text-deep_ocean" href={item.href}>
+							<a class="text-deep_ocean font-bold" href={item.href}>
 								{item.value}
 							</a>
 						</li>
