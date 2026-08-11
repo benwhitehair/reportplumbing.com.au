@@ -1,8 +1,8 @@
 ---
-import { siteConfig } from '../lib/site-config';
 import { Image } from 'astro:assets';
 import headerLogo from '../assets/header-logo.png';
 import { makeCanonicalUrl } from '../lib/make-canonical-url';
+import { siteConfig } from '../lib/site-config';
 
 const currentUrl = makeCanonicalUrl({
 	baseUrl: Astro.site?.toString() ?? siteConfig.baseUrl,
