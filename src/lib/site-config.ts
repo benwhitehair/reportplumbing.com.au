@@ -7,6 +7,10 @@ export const siteConfig = {
 	email: 'reportplumbing@bigpond.com',
 	siteNavigation: [
 		{
+			label: 'New Page',
+			slug: '/new-page',
+		},
+		{
 			label: 'Water Filtration',
 			slug: '/water-filtration',
 		},
