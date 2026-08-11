@@ -2,7 +2,7 @@
 
 import netlify from '@astrojs/netlify';
 import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'astro/config';
 
 import { siteConfig } from './src/lib/site-config';
@@ -16,11 +16,14 @@ export default defineConfig({
 	build: {
 		format: 'file',
 	},
-	integrations: [sitemap(), tailwind()],
+	integrations: [sitemap()],
 	output: 'static',
 	server: {
 		host: true,
 	},
 	site: siteConfig.baseUrl,
 	trailingSlash: 'never',
+	vite: {
+		plugins: [tailwindcss()],
+	},
 });

@@ -1,10 +1,9 @@
 export const siteConfig = {
-	title: 'Report Plumbing',
+	baseUrl: 'https://www.reportplumbing.com.au',
 	description:
 		'We cover all aspects of plumbing, home maintenance and water filtration systems. Prompt reliable and personal service in the Port Maquarie area.',
-	baseUrl: 'https://www.reportplumbing.com.au',
-	phone: '0404 222 244',
 	email: 'reportplumbing@bigpond.com',
+	phone: '0404 222 244',
 	siteNavigation: [
 		{
 			label: 'Water Filtration',
@@ -31,4 +30,5 @@ export const siteConfig = {
 			slug: '/about',
 		},
 	],
+	title: 'Report Plumbing',
 };

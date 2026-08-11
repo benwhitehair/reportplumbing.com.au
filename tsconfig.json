@@ -1,6 +1,5 @@
 {
+	"exclude": ["dist"],
 	"extends": "astro/tsconfigs/strictest",
-	"compilerOptions": {
-		"types": ["@epic-web/config/reset.d.ts"]
-	}
+	"include": [".astro/types.d.ts", "**/*"]
 }

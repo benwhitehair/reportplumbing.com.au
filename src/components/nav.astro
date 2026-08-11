@@ -1,8 +1,8 @@
 ---
-import { siteConfig } from '../lib/site-config';
 import { Image } from 'astro:assets';
 import headerLogo from '../assets/header-logo.png';
 import { makeCanonicalUrl } from '../lib/make-canonical-url';
+import { siteConfig } from '../lib/site-config';
 
 const currentUrl = makeCanonicalUrl({
 	baseUrl: Astro.site?.toString() ?? siteConfig.baseUrl,
@@ -10,7 +10,7 @@ const currentUrl = makeCanonicalUrl({
 });
 ---
 
-<nav class="border-b bg-ice">
+<nav class="bg-ice border-b">
 	<a class="flex shrink-0 items-center p-6 md:justify-center" href="/"
 		><Image
 			class="h-24 w-auto shrink-0 object-contain"
@@ -30,7 +30,7 @@ const currentUrl = makeCanonicalUrl({
 					<li class="inline">
 						<a
 							class:list={[
-								'relative inline-block px-4 pb-3 pt-2 text-sm font-bold text-gray-700',
+								'relative inline-block px-4 pt-2 pb-3 text-sm font-bold text-gray-700',
 								'hover:text-deep_ocean',
 							]}
 							href={navItem.slug}
@@ -39,7 +39,7 @@ const currentUrl = makeCanonicalUrl({
 							{isCurrent ? (
 								<span
 									aria-hidden="true"
-									class="absolute inset-x-0 bottom-0 inline-block h-1 w-full bg-deep_ocean"
+									class="bg-deep_ocean absolute inset-x-0 bottom-0 inline-block h-1 w-full"
 									transition:animate="initial"
 									transition:name="nav-underline"
 								/>
