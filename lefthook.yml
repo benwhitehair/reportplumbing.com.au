@@ -1,0 +1,28 @@
+# Auto-fixes formatting and lint issues on commit; runs the full check suite
+# before pushing. Skip either with `--no-verify`.
+
+pre-commit:
+  parallel: true
+  jobs:
+    - name: format
+      glob:
+        - '*.{js,ts,jsx,tsx,astro,md,json,css,yml,yaml}'
+      run: pnpm prettier --cache --write {staged_files}
+      stage_fixed: true
+    - name: lint
+      glob:
+        - '*.{js,ts,jsx,tsx,astro}'
+      run: pnpm eslint --cache --cache-location ./node_modules/.cache/eslint --fix --max-warnings 0 {staged_files}
+      stage_fixed: true
+
+pre-push:
+  parallel: true
+  jobs:
+    - name: format
+      run: pnpm run check:format
+    - name: lint
+      run: pnpm run check:lint
+    - name: types
+      run: pnpm run check:types
+    - name: astro
+      run: pnpm run check:astro
