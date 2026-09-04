@@ -5,30 +5,30 @@ export const siteConfig = {
 	email: 'reportplumbing@bigpond.com',
 	phone: '0404 222 244',
 	siteNavigation: [
-		{
-			label: 'Water Filtration',
-			slug: '/water-filtration',
-		},
-		{
-			label: 'Home Renovation',
-			slug: '/home-renovation',
-		},
-		{
-			label: 'General Maintenance',
-			slug: '/general-maintenance',
-		},
-		{
-			label: 'Gas Works',
-			slug: '/gas-works',
-		},
-		{
-			label: 'Rain Water Tanks | Pumps',
-			slug: '/rainwater-tanks-pumps',
-		},
-		{
-			label: 'About',
-			slug: '/about',
-		},
-	],
+  {
+    label: 'Leak Detection',
+    slug: '/leak-detection',
+  },
+  {
+    label: 'Water Ingress',
+    slug: '/water-ingress',
+  },
+  {
+    label: 'Plumbing Reports',
+    slug: '/plumbing-reports',
+  },
+  {
+    label: 'Commercial & Strata',
+    slug: '/commercial-strata',
+  },
+  {
+    label: 'Water Filtration',
+    slug: '/water-filtration',
+  },
+  {
+    label: 'About',
+    slug: '/about',
+  },
+],
 	title: 'Report Plumbing',
 };
