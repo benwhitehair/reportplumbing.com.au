@@ -174,7 +174,7 @@ export default defineConfig([
 			parserOptions: {
 				parser: tseslint.parser,
 				extraFileExtensions: ['.astro'],
-				projectService: true,
+				project: true,
 			},
 		},
 		plugins: {
