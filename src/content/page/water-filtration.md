@@ -1,7 +1,7 @@
 ---
 title: Water Filtration
 ---
-![Pentair UV and twin water filtration installation](/a_crisp_realistic_well_lit_industrial_utility_ro.png)
+![Pentair UV and twin water filtration installation](/Professional%20Pentair%20Water%20Filtration%20Installation.png)
 
 ## Premium Pentair Water Filtration
 
