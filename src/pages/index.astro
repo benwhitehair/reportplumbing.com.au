@@ -1,10 +1,10 @@
----
+import { Image } from 'astro:assets';
 import EmailIcon from '../components/icons/email.astro';
 import PhoneIcon from '../components/icons/phone.astro';
 import StyledList from '../components/styled-list.astro';
 import Layout from '../layouts/layout.astro';
+import farmTank from '../assets/large green farm tank.jpg';
 import { siteConfig } from '../lib/site-config';
-
 const contactDetails = [
 	{
 		href: `tel:${siteConfig.phone}`,
@@ -43,6 +43,12 @@ const contactDetails = [
 			<h1 class="font-display text-gray-700">
 				Rainwater Tank Installations, Pumps, Filtration & Specialist Plumbing
 			</h1>
+<Image
+  src={farmTank}
+  alt="Large green rainwater tank installation"
+  class="w-full rounded-xl"
+/>
+
 
 			
 				
