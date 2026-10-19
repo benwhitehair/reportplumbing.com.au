@@ -7,7 +7,7 @@ export const siteConfig = {
 	siteNavigation: [
 		{
     label: 'Rainwater Tanks & Pumps',
-    slug: slug: '/rainwater-tanks-pumps',
+    slug:  '/rainwater-tanks-pumps',
 },
 		{
 			label: 'Leak Detection',
