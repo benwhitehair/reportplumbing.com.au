@@ -1,6 +1,17 @@
 ---
 title: Water Filtration
 ---
+![Pentair UV and twin water filtration installation](/a_crisp_realistic_well_lit_industrial_utility_ro.png)
+
+## Premium Pentair Water Filtration
+
+This installation features two separate filtration systems, designed for different household needs.
+
+**Pentair UV system:** Provides UV-treated water to the kitchen and bathroom vanities for drinking, food preparation and personal use.
+
+**Twin cartridge filtration:** Supplies filtered water for toilet flushing, outdoor taps and other general household uses.
+
+Report Plumbing designs and installs tailored water filtration solutions throughout Port Macquarie and the Mid North Coast.
 
 Try this experiment — unscrew the aerator from your kitchen tap and look at what your drinking. That’s only what you can see!
 
