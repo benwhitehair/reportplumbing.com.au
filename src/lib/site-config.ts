@@ -6,6 +6,10 @@ export const siteConfig = {
 	phone: '0404 222 244',
 	siteNavigation: [
 		{
+    label: 'Rainwater Tanks & Pumps',
+    slug: '/rainwater-tanks',
+},
+		{
 			label: 'Leak Detection',
 			slug: '/leak-detection',
 		},
