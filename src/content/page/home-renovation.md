@@ -43,25 +43,23 @@ The completed bathroom features a contemporary design incorporating:
 - Improved functionality and presentation
 
 The before-and-after photographs demonstrate the difference a well-planned bathroom renovation can make.
-
-
 ### Before Renovation
 
-![Bathroom before renovation](/images/Bathroom%20Before%20shot.png)
+![Bathroom before renovation](/Bathroom%20Before%20shot.png)
 
-![Original bathroom](/images/Bathroom%20before.jpg)
+![Original bathroom](/Bathroom%20before.jpg)
 
 ### After Renovation
 
-![Completed bathroom renovation](/images/bathroom%20reno.jpg)
+![Completed bathroom renovation](/bathroom%20reno.jpg)
 
-![Renovated shower](/images/Shower%20shot%202.jpg)
+![Renovated shower](/Shower%20shot%202.jpg)
 
-![Completed shower](/images/Shower.jpg)
+![Completed shower](/Shower.jpg)
 
-![New bathroom basin](/images/Basin.jpg)
+![New bathroom basin](/Basin.jpg)
 
-![New bathroom vanity cabinet](/images/Pill%20Cab.jpg)
+![New bathroom vanity cabinet](/Pill%20Cab.jpg)
 
 
 ## Why Choose Report Plumbing?
